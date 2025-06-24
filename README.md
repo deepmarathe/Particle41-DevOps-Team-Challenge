@@ -1,10 +1,7 @@
-Here’s a cleanly formatted version of your README:
-
----
 
 # Particle41-DevOps-Team-Challenge
 
-My submission repository for the Particle41 DevOps Team Challenge.
+My submission repository for the Particle41 DevOps Team Challenge Task1.
 
 ---
 
