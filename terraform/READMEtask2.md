@@ -1,58 +1,72 @@
-???? Step 1: Login to AWS
-Before running the Terraform module, you will need to log in to your AWS account.
+Here's a polished and professional version of your READMEtask2.md, suitable for submission:
 
-In your command prompt or CMD, enter:
+---
 
-bash
-Copy
-Proofread
+# Task 2: Deploying Infrastructure with Terraform
+
+## Step 1: Log in to AWS
+
+Before running the Terraform module, ensure you are authenticated with your AWS account.
+
+Open your terminal (Command Prompt, PowerShell, or similar) and run:
+
+```bash
 aws configure
-You'll be asked for:
+```
 
-pgsql
-Copy
-Rework
-AWS Access Key ID:        <enter your access key>
-AWS Secret Access Key:    <enter your secret key here>
-Default region name:      us-east-1
-Default output format:    json
-✅ Done! You are now signed in to AWS.
+You will be prompted for the following:
 
-You can check that it did work by running:
+- **AWS Access Key ID:**        `<enter your access key>`
+- **AWS Secret Access Key:**    `<enter your secret key>`
+- **Default region name:**      `us-east-1`
+- **Default output format:**    `json`
 
-bash
-Duplicate
-Rephrase
+
+
+To verify your credentials, run:
+
+```bash
 aws sts get-caller-identity
-This should show your AWS account details.
+```
 
-⚙️ Step 2: Deploy Infrastructure
-Now deploy all using these two commands:
+You should see your AWS account details.
 
-bash
-Copy
-Rephrase
+---
+
+## Step 2: Deploy the Infrastructure
+
+Initialize and deploy the Terraform configuration with the following commands:
+
+```bash
 terraform init
 terraform apply
-When it asks to confirm, type:
+```
 
-bash
-Duplicate
-Revise
-yes This will:
+When prompted to confirm the action, type:
 
-Network and build
+```bash
+yes
+```
 
-Launch EC2-based ECS cluster
+Terraform will perform the following actions:
 
-Pull your Docker image from Docker Hub
+- Create the networking resources
+- Provision an EC2-based ECS cluster
+- Pull your Docker image from Docker Hub
+- Expose the service via an AWS Load Balancer
 
-Expose it with a Load Balancer
+---
 
-???? Step 3: Check the Output
+## Step 3: Access the Deployed Application
 
-Once ready, Terraform will provide a web URL:
+Once the deployment is complete, Terraform will output the URL for your application, similar to:
 
-bash
+```
+alb_url = task1-lb-xxxxxx.us-east-1.elb.amazonaws.com
+```
 
-Copy Proofread alb_url = task1-lb-xxxxxx.us-east-1.elb.amazonaws.com Copy that URL and enter it into your browser. ✅ You will see something like: This indicates that your container is running flawlessly on AWS!
+Copy this URL and open it in your browser. You should see a confirmation that your containerized application is running successfully.
+
+---
+
+Let me know if you want this refined further or need it tailored for a specific audience!
