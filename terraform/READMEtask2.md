@@ -1,7 +1,3 @@
-Here's a polished and professional version of your READMEtask2.md, suitable for submission:
-
----
-
 # Task 2: Deploying Infrastructure with Terraform
 
 ## Step 1: Log in to AWS
@@ -59,7 +55,7 @@ Terraform will perform the following actions:
 
 ## Step 3: Access the Deployed Application
 
-Once the deployment is complete, Terraform will output the URL for your application, similar to:
+Once the deployment is complete, Terraform will output the URL for your application, something similar to :
 
 ```
 alb_url = task1-lb-xxxxxx.us-east-1.elb.amazonaws.com
