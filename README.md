@@ -1,29 +1,42 @@
+Here’s a cleanly formatted version of your README:
+
+---
+
 # Particle41-DevOps-Team-Challenge
+
 My submission repository for the Particle41 DevOps Team Challenge.
 
+---
 
-#### How to Run SimpleTimeService, Task1
-You only need Docker installed as a part of the prerequisites.
+## How to Run SimpleTimeService (Task 1)
 
-##Step 1: Pull the app
+You only need Docker installed as a prerequisite.
 
+### Step 1: Pull the app
+
+```bash
 docker pull drax23/task1simpletimeservice
+```
 
+### Step 2: Run the app
 
-##Step 2: Run the app
+```bash
 docker run -p 8000:8000 drax23/task1simpletimeservice
+```
 
+### Step 3: Open in your browser
 
-##Step 3: Open in browser
-http://localhost:8000
-
+Visit: [http://localhost:8000](http://localhost:8000)
 
 You will see something like:
 
+```json
 {
   "timestamp": "2025-06-23T15:45:12.123456",
   "ip": "127.0.0.1"
 }
+```
 
+---
 
-Thats it!!
+That’s it!
